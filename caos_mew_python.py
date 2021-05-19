@@ -1,4 +1,4 @@
-data = '' #main memory in list
+data = '' #main memory in  list
 second_block=0 
 first_block=0
 i=0     #file point

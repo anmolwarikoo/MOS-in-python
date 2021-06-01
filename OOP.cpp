@@ -35,22 +35,16 @@ class diabetes
 		void enterdata();
 		void doctorlist();
 		void test();
-		void totaltest();
 		void search();
 		void deldata();
 		void prereport();
-		void aboutme();
 		void admin();
-		void reply();
 		void setlock();
-		void queries();
 		int report();
 		int display(int,int);
-		void showqu();
 		void update();
 		void adminre();
-	    void patientlogin();
-		void treatrecord();
+
 }mainobj;
 
 class Login
@@ -77,7 +71,7 @@ class doctor
 class problems
 {
 	public:
-		friend class diabetes;
+	friend class diabetes;
     int id,vision,thirst,hunger,furine;
     char bg[2];
 	int headche,fatigue;
@@ -90,37 +84,6 @@ class problems
 	float glucose1;
 }objp;
 
-class bill
-{
-		friend class doctor;
-		friend class problems;
-		friend class Login;
-		friend class adminstration;
-		friend class patient;
-	public:
-    int id;
-    int billid;
-	int sum;
-	enum fee{Thakur=1000,Grover=1500,Chawla=1500,Joradan=2000,JazzyB=3000};
-    void total();
-
-}bobj;
-class patient
-{
-	    public:
-		friend class problems;
-		friend class diabetes;
-		friend class quick;
-		friend class doctor;
-		int buyid;
-		void updatemine();
-		void buy();
-		void medicare();
-		void diseaselevel();
-		void docchange();
-		char comp[2000];
-		char send[2000];
-}pa;
 
 class adminstration
 {
@@ -141,38 +104,11 @@ class adminstration
         friend class problems;
 		friend class diabetes;
 		friend class doctor;
-		friend class paitent;
-        void stpassword();
-		void medi();               //medicine name provider along price
-		void calcbill();           //along with medicines and doctor fees if no medi then only that
-		void adddoc();             //junior doctors
+		friend class paitent;                       
         void adminsi();
         void count();
 
 }admino;
-class discuss
-{
-    public:
-	friend class diabetes;
-	friend class doctors;
-	friend class patient;
-	friend class problems;
-	friend class adminstration;
-	int id;
-	char name[20];
-	char reply[200000];
-	char input[200000];
-}q;
-class finalreport
-{
-	public:
-	friend class diabetes;
-	friend class doctors;
-	friend class patient;
-	friend class problems;
-	int id;                         // to detect
-	char dbresult;                  //level
-}freport;
 
 class quick
 {
@@ -1660,126 +1596,6 @@ void diabetes::setlock()                //solve issues
 }
 
 
-void patient::medicare()
-{
-	system("cls");
-    cout<<"\t\t\t\t\t Welcome to diabetes management system\n\n\n";
-    cout<<"\t\t\t\t\t     OOPS course project SY3\n\n";
-	fout.open("Medicines.txt",ios::in);
-	cout<<" Here's the medicines list \n\n ";
-	cout<<setw(10)<<"Medicine ID"<<setw(10)<<"|"<<setw(15)<<"MEDICINE NAMES"<<setw(15)<<"|"<<setw(10)<<"PRICE"<<"|";
-	cout<<"\n\n________________________________________________________________________________________________________________________________________________________________________________\n\n";
-    while(fout.read((char*)&admino,sizeof(admino)))
-    {
-    cout<<"|"<<setw(9)<<admino.medid<<setw(10)<<"|"<<setw(15)<<admino.medicines<<setw(15)<<"|"<<setw(10)<<admino.medprice<<"|\n\n";
-	}
-   fout.close();
-}
-void patient ::buy()
-{
-	system("cls");
-	int temp,localid,qty,i,tempid;
-	float sum=0;
-	char ch;
-	cout<<"\t\t\t\t\t Welcome to diabetes management system\n\n\n";
-    cout<<"\t\t\t\t\t     OOPS course project SY3\n\n";
-    fcross.open("DIABETESDATA.txt",ios::in|ios::out);
-	fout.open("Medicines.txt",ios::in|ios::out);
-    fin.open("Medbuy.txt",ios::out|ios::in);
-    ftemp.open("empty.txt",ios::in|ios::out);
-    cout<<"\n\n Enter your id : ";
-    cin>>tempid;
-    while(fcross.read((char*)&mainobj,sizeof(mainobj)))
-    {
-    	if(tempid==mainobj.id)
-    	break;
-	}
-    while(ftemp.read((char*)&admino,sizeof(admino)))
-    {
-    	fin.write((char*)&admino,sizeof(admino));
-	}
-	fout.close();
-	ftemp.close();
-	fin.close();
-	fout.open("Medicines.txt",ios::in);
-	cout<<" Here's the medicines list \n\n ";
-		cout<<setw(10)<<"Medicine ID"<<setw(10)<<"|"<<setw(15)<<"MEDICINE NAMES"<<setw(15)<<"|"<<setw(10)<<"PRICE"<<"|";
-	cout<<"\n\n_____________________________________________________________________________________________________________________________________________________________________________\n\n";
-    while(fout.read((char*)&admino,sizeof(admino)))
-    {
-   cout<<"|"<<setw(9)<<admino.medid<<setw(10)<<"|"<<setw(15)<<admino.medicines<<setw(15)<<"|"<<setw(10)<<admino.medprice<<"|\n\n";
-	}
-    fout.close();
-    fout.open("Medicines.txt",ios::in);
-	T:
-	cout<<"\n\n Enter the id of medicine you want to Buy?\n\n ";
-    cin>>temp;
-    cout<<"\n\n Enter the quantity of medicine bought?\n\n ";
-    cin>>qty;
-    while(fout.read((char*)&admino,sizeof(admino)))
-    {
-    for(i=0;i<qty;i++)
-    {
-    if(temp==admino.medid)
-    {
-    sum=sum+admino.medprice;
-    }
-    }
-    }
-    fout.seekg(0,ios::beg);
-    fout.close();
-    fout.open("Medicines.txt",ios::in);
-    while(fout.read((char*)&admino,sizeof(admino)))
-    {
-    if(temp==admino.medid)
-    {
-     		 fin.open("Medbuy.txt",ios::app);
-     		 fin.write((char*)&admino,sizeof(admino));
-     		 fin.close();
-	}
-	}
-	fout.close();
-	fout.open("Medicines.txt",ios::in);
-    cout<<"\n\n \t\t\t\tFOR MORE PRESS Y or FOR BILL PRESS ANY OTHER KEY\n\n ";
-    cout<<"Your Choice : ";
-    cin>>ch;
-    if(ch=='y'||ch=='Y')
-    {
-    goto T;
-    }
-    else
-    {
-    system("cls");
-    int billid;
-    srand(time(NULL));
-    billid==rand()%1000000+2000000;
-    fin.open("Medbuy.txt",ios::in);
-    fsum.open("Bill.txt",ios::app);
-    cout<<"\t\t\t\t\t Welcome to diabetes management system\n\n\n";
-    cout<<"\t\t\t\t\t     OOPS course project SY3\n\n";
-    cout<<"_________________________________________________________________________________________________________________________________________________________________________\n\n\n";
-    cout<<"\n\n ";
-    cout<<"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bill id : "<<billid;
-    cout<<setw(20)<<"Medicine ID"<<setw(20)<<"|"<<setw(25)<<"MEDICINE NAMES"<<setw(25)<<"|"<<setw(20)<<"PRICE"<<"|";
-	cout<<"____________________________________________________________________________________________________________________________________________________________________________\n\n";
-    while(fin.read((char*)&admino,sizeof(admino)))
-    {
-    cout<<"|"<<setw(19)<<admino.medid<<setw(20)<<"|"<<setw(25)<<admino.medicines<<setw(25)<<"|"<<setw(20)<<admino.medprice<<"|\n\n";
-	cout<<"_____________________________________________________________________________________________________________________________________________________________________________\n\n";
-    }
-    cout<<"\n\n\t\t\t\t\t\t\t Total Bill of Medicine is : "<<sum;
-	cout<<"\n________________________________________________________________________________________________________________________________________________________________________________\n\n";
-    bobj.billid=billid;
-	bobj.sum=sum;
-	bobj.id=tempid;
-	fin.close();
-	fsum.write((char*)&bobj,sizeof(bobj));
-	fsum.close();
-	}
-	fout.close();
-	fcross.close();
-	remove("Medbuy.txt");
-    }
 void diabetes::update()
 {
 	ftemp.open("send1.txt",ios::in);
@@ -1789,20 +1605,6 @@ void diabetes::update()
     cout<<"\t\t\t\t\t     OOPS course project SY3\n\n";
     int tempid;
     fin.open("update.txt",ios::out);
-    cout<<"\n\n You may have requests to update record ";
-    cout<<"\n\n Press Y to see them ";
-    char tp;
-    cin>>tp;
-    if(tp=='y'||tp=='Y')
-    {
-	    cout<<"\n\n Requests : ";
-    	while(ftemp.read((char*)&pa,sizeof(pa)))
-    	{
-    	cout<<" "<<pa.send;
-        }
-	}
-else
-cout<<"\n\n You may be suspended for illegal access or change in data";
 	cout<<"\n\n Enter The ID to be updated \n";
 	cin>>tempid;
 	while(fout.read((char*)&mainobj,sizeof(mainobj)))
@@ -1840,23 +1642,6 @@ if(mainobj.id==tempid)
 	Sleep(1);
 }
 
-void patient::updatemine()
-  {
-  	system("cls");
-	cout<<"\t\t\t\t\t Welcome to diabetes management system\n\n\n";
-    cout<<"\t\t\t\t\t     OOPS course project SY3\n\n";
-  ftemp.open("send.txt",ios::app);
-  cout<<"\n\n Write the msg to admin to update and what to update and give reason for it : ";
-  fflush(stdin);
-  gets(pa.send);
-  ftemp.write((char*)&pa,sizeof(pa));
-  ftemp.close();
-  cout<<"\n\n WAIT";
-   Sleep(2);
-  cout<<"\n\n Request for change submitted\n";
-  }
-
-
  void diabetes::adminre()
  {
  	 system("cls");
@@ -1876,67 +1661,6 @@ void patient::updatemine()
 	}
  }
 
-
- void patient :: diseaselevel()
- {
- 	system("cls");
-    cout<<"\t\t\t\t\t Welcome to diabetes management system\n\n\n";
-    cout<<"\t\t\t\t\t     OOPS course project SY3\n\n";
- 	cout<<"\n\n ";
-    fin.open("DIABETESDATA.txt",ios::in);
-    fout.open("problems.txt",ios::in);
-    cout<<"Enter Your Id : ";
-    int tempid;
-    cin>>tempid;
-    int check=0;
-    while(fin.read((char*)&mainobj,sizeof(mainobj)))
-    {
-    	if(tempid==mainobj.id)
-    	break;
-	}
-	while(fout.read((char*)&objp,sizeof(objp)))
-	{
-		if(tempid==objp.id)
-		break;
-	}
-		if(tempid==mainobj.id)
-		{
-		cout<<"\n\n Sugar Level : "<<objp.sugarlevel;
-		if(objp.sugarlevel>=9.0)
-{
-	check=1;
-cout<<" High Sugar Level-II\n";
-}
-else if(objp.sugarlevel<9.0 && objp.sugarlevel>7.5)
-{
-	check=2;
-cout<<" High Sugar Level\n";
-}
-else if(objp.sugarlevel>4.0 && objp.sugarlevel<7.4)
-{
-	check=3;
-cout<<" Normal Sugar Level\n";
-}
-else
-cout<<" Low Sugar Level\n";
-      }
-      if(check==1)
-cout<<"\n\n\n\t\t\t\t\t\t Diabetes Level-2 \n\n";
-      else if(check==2)
-cout<<"\n\n\n\t\t\t\t\t\t Diabetes Level-1\n\n";
-else if(check==3)
-cout<<"\n\n\n\t\t\t\t\t\t No Diabetes\n\n";
-else
-cout<<"\n\n\n\t\t\t\t\t\t Low sugar\n\n";
-cout<<" Loading\n\n";
-Sleep(2);
-cout<<" Health tip 2: Take medicines on time \n";
-Sleep(4);
-fin.close();
-fout.close();
-mainobj.twist();
-}
-
 void quick::buy()               // not more than 2 medicines , issue, used getch to stop()
 {
 	int sum=0;
@@ -1945,13 +1669,11 @@ void quick::buy()               // not more than 2 medicines , issue, used getch
 	int qty;
 	char ch1;
 	int mod[10];
+	int j=0;
 	B:
 	system("cls");
  	cout<<"\t\t\t\t\t Welcome to diabetes management system\n\n\n";
     cout<<"\t\t\t\t\t     OOPS course project SY3\n\n";
-
-
-    static int j=0;
 	cout<<setw(5)<<"ID"<<setw(5)<<"|"<<setw(20)<<"Name"<<setw(20)<<"|"<<setw(5)<<"Price/package"<<setw(5)<<"|\n\n";
 	cout<<setw(5)<<"1"<<setw(5)<<"|"<<setw(20)<<"NOVOLOG"<<setw(20)<<"|"<<setw(5)<<"Rs 1200"<<setw(5)<<"|\n\n";
 	cout<<setw(5)<<"2"<<setw(5)<<"|"<<setw(20)<<"NOVOLIN"<<setw(20)<<"|"<<setw(5)<<"Rs 1100"<<setw(5)<<"|\n\n";
@@ -2057,23 +1779,23 @@ for(int u=0;u<=j;u++)
 	}
 		if(mod[u]==6)
     {
-    	cout<<setw(5)<<"1"<<setw(5)<<"|"<<setw(20)<<"PRECOSE"<<setw(20)<<"|"<<setw(5)<<"Rs 2500"<<setw(5)<<"|\n\n";
+    	cout<<setw(5)<<"6"<<setw(5)<<"|"<<setw(20)<<"PRECOSE"<<setw(20)<<"|"<<setw(5)<<"Rs 2500"<<setw(5)<<"|\n\n";
 	}
 	if(mod[u]==7)
     {
-    cout<<setw(5)<<"2"<<setw(5)<<"|"<<setw(20)<<"MIGLITOL"<<setw(20)<<"|"<<setw(5)<<"Rs 3500"<<setw(5)<<"|\n\n";
+    cout<<setw(5)<<"7"<<setw(5)<<"|"<<setw(20)<<"MIGLITOL"<<setw(20)<<"|"<<setw(5)<<"Rs 3500"<<setw(5)<<"|\n\n";
 	}
 	if(mod[u]==8)
     {
-    cout<<setw(5)<<"3"<<setw(5)<<"|"<<setw(20)<<"KAZANO"<<setw(20)<<"|"<<setw(5)<<"Rs 4500"<<setw(5)<<"|\n\n";
+    cout<<setw(5)<<"8"<<setw(5)<<"|"<<setw(20)<<"KAZANO"<<setw(20)<<"|"<<setw(5)<<"Rs 4500"<<setw(5)<<"|\n\n";
 	}
 	if(mod[u]==9)
     {
-    cout<<setw(5)<<"4"<<setw(5)<<"|"<<setw(20)<<"GLUCOVANCE"<<setw(20)<<"|"<<setw(5)<<"Rs 5500"<<setw(5)<<"|\n\n";
+    cout<<setw(5)<<"9"<<setw(5)<<"|"<<setw(20)<<"GLUCOVANCE"<<setw(20)<<"|"<<setw(5)<<"Rs 5500"<<setw(5)<<"|\n\n";
 	}
 	if(mod[u]==10)
     {
-    cout<<setw(5)<<"5"<<setw(5)<<"|"<<setw(20)<<"ACTOPLUS"<<setw(20)<<"|"<<setw(5)<<"Rs 6000"<<setw(5)<<"|\n\n";
+    cout<<setw(5)<<"10"<<setw(5)<<"|"<<setw(20)<<"ACTOPLUS"<<setw(20)<<"|"<<setw(5)<<"Rs 6000"<<setw(5)<<"|\n\n";
 	}
 
 }

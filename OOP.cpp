@@ -205,7 +205,7 @@ float bodytemp;
 		{
 			char ch;
 	system("cls");
- 	char chwer[]={"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n"};
+ 	char chwer[]={"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe assess we understand!\n"};
  	int l=strlen(chwer);
  	int kk;
  	for(kk=0;kk<l;kk++)
@@ -221,7 +221,7 @@ float bodytemp;
  		cout<<chwer1[kk];
 	}
 	
-	char chwer2[]={"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n"};
+	char chwer2[]={"\t\t\t\t\t\t\t\t   ....OOPS SY 3....\n\n"};
  l=strlen(chwer2);
  	for(kk=0;kk<l;kk++)
  	{
@@ -237,11 +237,11 @@ float bodytemp;
 	cout<<gid;
 	cout<<"\n\n Enter Age : ";
 	cin>>age;	
-	cout<<"\n\n Do you Symptons like becoming//having :\n\n 1>THIRSTY 2>Weight Loss 3>Fatigueness 4>Vision Problem 5>Frequent Urine 6>Increased Hunger ??\n\n";
+	cout<<"\n\n Do you Symptoms like becoming//having :\n\n 1>THIRSTY 2>Weight Loss 3>Fatigueness 4>Vision Problem 5>Frequent Urine 6>Increased Hunger ??\n\n";
 	cout<<" Enter Y for Yes : ";
 	cin>>ch;	
 	if(ch=='y'||ch=='Y')
-	cout<<"\n\n You may have the chances of diabetes, as Because these are the key symptons of it!!";
+	cout<<"\n\n You may have the chances of diabetes, as Because these are the key symptoms of it!!";
 	else
 	cout<<"\n\n You may not have the diabetes  but it is still not sure!!";	
 	cout<<"\n\n Let the nurse take your blood sample  ";
@@ -250,7 +250,7 @@ float bodytemp;
 	sleep(2);
 	cout<<"\n\n Analyzing Blood Samples  ";
 	sleep(2);
-	cout<<"\n\n Thanks for being paitent ";
+	cout<<"\n\n Thanks for being patient ";
 	sleep(2);
 	cout<<"\n\n TEST INITIALIZED : ";
 	cout<<"\n\n Enter the weight : ";
@@ -261,7 +261,7 @@ float bodytemp;
 	cin>>bodytemp;
 	cout<<"\n\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n";
 	cout<<"\t\t\t\t\t\t\t\t\t Generating Report ";
-	cout<<"\n\n Analyzing Symtons ";
+	cout<<"\n\n Analyzing Symptoms ";
 	sleep(1);
 	cout<<"\n\n Analyzing Blood Sample ";
 	sleep(1);
@@ -270,9 +270,9 @@ float bodytemp;
     cout<<"\n\n Getting things done ";
     sleep(2);
     system("cls");
- 	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n";
+ 	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe assess we understand!\n";
 	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";	
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
+	cout<<"\t\t\t\t\t\t\t\t   ....OOPS SY 3....\n\n";
 	cout<<"\t\t\t\t\t\t\t\t\t\tREPORT";
 	cout<<"\n\n Name : "<<name;
 	cout<<"\n\n Age : "<<age;
@@ -357,9 +357,9 @@ cout<<"\n\n Cholesrtrol ->  Highly Dangerous ->  "<<cholestrol<<" mg/dl";
 if(sugar>=5.00 && sugar<=7.5)	
 cout<<"\n\n Normal Sugar Level : ->No signs of Diabetes till now ";
 else if(sugar>7.5 && sugar<8.5)
-cout<<"\n\n High Sugar Level : Diabetes Level 1 :->May led to heart stroke ";
+cout<<"\n\n High Sugar Level : Diabetes Level 1 :->May lead to heart stroke ";
 else if(sugar>=8.5)
-cout<<"\n\n High Sugar Level : Diabetes Level 2 :->Can led to heart attack ";
+cout<<"\n\n High Sugar Level : Diabetes Level 2 :->Can lead to heart attack ";
 else
 cout<<"\n\n Low Sugar Level : ";	
 cout<<"\n\n This is on the basis of a simple test only please take appointment from doctor for much more and clear understanding and for complete treatment\n\n";		
@@ -368,9 +368,9 @@ cout<<"\n\n Generating Medicine Suggestions ";
 if(sugar>7.5 && sugar<8.5)	
 {
     system("cls");
- 	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n";
+ 	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe assess we understand!\n";
 	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";	
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
+	cout<<"\t\t\t\t\t\t\t\t   ....OOPS SY 3....\n\n";
 	cout<<"\t\t\t\t\t\t\t\t\t\tMedicines";   
 	cout<<"\n\n 1. NovoLog \n\n 2. Novolin \n\n 3. Humulin \n\n 4. Humalog \n\n 5. Apidra \n\n";
 	srand(time(NULL));
@@ -460,7 +460,7 @@ class diet
  		cout<<chwer1[kk];
 	}
 	
-	char chwer2[]={"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n"};
+	char chwer2[]={"\t\t\t\t\t\t\t\t   ....OOPS SY 3....\n\n"};
  l=strlen(chwer2);
  	for(kk=0;kk<l;kk++)
  	{
@@ -471,7 +471,7 @@ class diet
 	cout<<"\n\n Enter Your Name Please : ";
 	fflush(stdin);
 	gets(name);
-	cout<<"\n\n Enter weather you have diabetes or not(Y/N) ? ";
+	cout<<"\n\n Enter whether you have diabetes or not(Y/N) ? ";
 	cout<<"\n\n Your Choice : ";
 	cin>>ch;
 	if(ch=='Y'||ch=='y')
@@ -496,7 +496,7 @@ class diet
  		cout<<chwer1[kk];
 	}
 	
-	char chwer2[]={"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n"};
+	char chwer2[]={"\t\t\t\t\t\t\t\t   ....OOPS SY 3....\n\n"};
  l=strlen(chwer2);
  	for(kk=0;kk<l;kk++)
  	{
@@ -544,7 +544,7 @@ system("cls");
  		cout<<chwer1[kk];
 	}
 	
-	char chwer2[]={"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n"};
+	char chwer2[]={"\t\t\t\t\t\t\t\t   ....OOPS SY 3....\n\n"};
  l=strlen(chwer2);
  	for(kk=0;kk<l;kk++)
  	{
@@ -617,7 +617,7 @@ void diabetes::twist()
 {
 	system("cls");
 	int ch;
-		char chwer[]={"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n"};
+		char chwer[]={"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe assess we understand!\n"};
  	int l=strlen(chwer);
  	int kk;
  	for(kk=0;kk<l;kk++)
@@ -633,7 +633,7 @@ void diabetes::twist()
  		cout<<chwer1[kk];
 	}
 	
-	char chwer2[]={"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n"};
+	char chwer2[]={"\t\t\t\t\t\t\t\t   ....OOPS SY 3....\n\n"};
  l=strlen(chwer2);
  	for(kk=0;kk<l;kk++)
  	{
@@ -693,7 +693,7 @@ void diabetes:: welcome()
 	int ch;
 	char check;
 	A:	
-		char chwer[]={"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n"};
+		char chwer[]={"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe assess we understand!\n"};
  	int l=strlen(chwer);
  	int kk;
  	for(kk=0;kk<l;kk++)
@@ -709,14 +709,14 @@ void diabetes:: welcome()
  		cout<<chwer1[kk];
 	}
 	
-	char chwer2[]={"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n"};
+	char chwer2[]={"\t\t\t\t\t\t\t\t   ....OOPS SY 3....\n\n"};
  l=strlen(chwer2);
  	for(kk=0;kk<l;kk++)
  	{
  		Sleep(10);
  		cout<<chwer2[kk];
 	}
-	cout<<"\t\t\t\t\t\t\t\t   CHOOSE THE OPTIONS FROM MENU\n\n 1: ENTER DATA\n\n 2: GET\\TAKE APPOINTMENT\n\n 3: LIST OF PAITENTS\n\n 4: TEST\n\n 5: Pre-Report\n\n 6: FINAL REPORT\n\n 7: PATIENT-LOGIN\n\n 8: ABOUT DEVELOPER OF THIS CODE\n\n 9: EXIT\n\n";
+	cout<<"\t\t\t\t\t\t\t\t   CHOOSE THE OPTIONS FROM MENU\n\n 1: ENTER DATA\n\n 2: GET\\TAKE APPOINTMENT\n\n 3: LIST OF PATIENTS\n\n 4: TEST\n\n 5: Pre-Report\n\n 6: FINAL REPORT\n\n 7: PATIENT-LOGIN\n\n 8: ABOUT DEVELOPER OF THIS CODE\n\n 9: EXIT\n\n";
     cout<<"\n YOUR CHOICE : ";
 	cin>>ch;
     switch(ch)
@@ -862,7 +862,7 @@ main()
         }
         else if(wholecheck==2)
         {
-        cout<<"\n\n Server Crashed due to heavy traffic or You Entered Incorrect Password\n";	
+        cout<<"\n\n  Entered Incorrect Password\n";	
         cout<<"\n\n Try Again in few seconds\n\n";
         char ch12[]={"\n\n Reloading in 5 seconds\n\n"};
         int kk,l;
@@ -922,9 +922,9 @@ void diabetes::enterdata()
 	for(i=0;i<num;i++)
 	{
 	system("cls");
- 	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n";
+ 	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe assess we understand!\n";
 	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";	
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
+	cout<<"\t\t\t\t\t\t\t\t   ....OOPS SY 3....\n\n";
     cout<<"_________________________________________________________________________________________________________________________________________________________________________\n\n\n";
     cout<<"\n\n ";
     cout<<" PLEASE ASK THE IDno. AND ENTER IT : ";
@@ -951,7 +951,7 @@ int diabetes::display(int a,int b)
 {
 	fin.open("DIABETESDATA.txt",ios::in);
 	system("cls");
-	cout<<"\t\t\t\tHere's the Data of all paitents\n\n\n";
+	cout<<"\t\t\t\tHere's the Data of all patients\n\n\n";
 	
 	
 	cout<<"|\t ID\t   |             NAME                 |  AGE    |   SEX   |   HEIGHT    |   WEIGHT      |\n";
@@ -1032,27 +1032,27 @@ if(mainobj.id==tempid)
 	cout<<" Patient name: ";
 	cout<<mainobj.name;
 	cout<<"\n\n\n";
-	cout<<" 1:Are you getting thirsty frequently.Enter the data accordingly(3-highly yes||2-medium yes||1-low yes||0-no)? -> ";
+	cout<<" 1:Are you feeling thirsty frequently.Enter the data accordingly(3-highly yes||2-medium yes||1-low yes||0-no)? -> ";
 	cin>>objp.thirst;
 	cout<<"\n\n\n";
-	cout<<" 2:Are you getting hungry fast.Enter the data accordingly(3-highly yes||2-medium yes||1-low yes||0-no)? -> ";
+	cout<<" 2:Are you feeling hungry fast.Enter the data accordingly(3-highly yes||2-medium yes||1-low yes||0-no)? -> ";
 	cin>>objp.hunger;
     cout<<"\n\n\n";
-	cout<<" 3:Are you getting urine frequently.Enter the data accordingly(3-highly yes||2-medium yes||1-low yes||0-no)? -> ";
+	cout<<" 3:Are you  urinating frequently.Enter the data accordingly(3-highly yes||2-medium yes||1-low yes||0-no)? -> ";
 	cin>>objp.furine;
 	cout<<"\n\n\n";
-	cout<<" 4:Do you get headches?Enter the level(3-high||2-medium||1-low||0-no)? -> ";
+	cout<<" 4:Do you get headaches?Enter the level(3-high||2-medium||1-low||0-no)? -> ";
 	cin>>objp.headche;
 	cout<<"\n\n\n";
-	cout<<" 5:Do you feel fatiguness?Enter the level(3-high||2-medium||1-low||0-no)? -> ";
+	cout<<" 5:Do you feel fatigueness?Enter the level(3-high||2-medium||1-low||0-no)? -> ";
 	cin>>objp.fatigue;
 	cout<<"\n\n\n";
 	cout<<" 6:How is your vision?Enter the level(3-highly Blurred||2-Partially Blurred||1-Sometimes Blurred||0-no)? -> ";
 	cin>>objp.vision;
-	cout<<"\n\n 7.Was there anyy weight loss in your body in few days(y/n)?->";
+	cout<<"\n\n 7.Was there any weight loss in your body in few days(y/n)?->";
 	cin>>objp.weight;
 	cout<<"\n\n\n";
-	cout<<" 8.Has any body in your family had diabetes before?(y/n)?->";
+	cout<<" 8.Is there any medical history of diabetes in your family(y/n)?->";
 	cin>>objp.fam;
 	cout<<"\n\n";
 	sleep(2);
@@ -1091,7 +1091,7 @@ if(mainobj.id==tempid)
     }
     else
     {
-    	cout<<"\n\n There's no appointment Booked for such person";
+    	cout<<"\n\n There's no appointment Booked under this name";
 	}
 }
 else
@@ -1160,7 +1160,7 @@ cout<<"\n\n";
 
 
 
-cout<<" 3.Headche Level: ";
+cout<<" 3.Headache Level: ";
 if(objp.headche==0)
 cout<<" NO PROBLEM";
 else if(objp.headche==1)
@@ -1300,15 +1300,15 @@ float cholestrol;
 srand(time(NULL));
 cholestrol=rand()%90+200;
 if(cholestrol<=100)
-cout<<"\n\n Cholesrtrol -> IDEAL ->  "<<cholestrol<<" mg/dl";
+cout<<"\n\n Cholestrol -> IDEAL ->  "<<cholestrol<<" mg/dl";
 else if(cholestrol>100 && cholestrol<=129)
 cout<<"\n\n Cholestrol -> Close to Ideal -> "<<cholestrol<<" mg/dl";
 else if(cholestrol>=130 && cholestrol<=159)
-cout<<"\n\n Cholesrtrol -> Borderline ->  "<<cholestrol<<" mg/dl";
+cout<<"\n\n Cholestrol -> Borderline ->  "<<cholestrol<<" mg/dl";
 else if(cholestrol>=160 && cholestrol<=189)
-cout<<"\n\n Cholesrtrol ->  High ->  "<<cholestrol<<" mg/dl";
+cout<<"\n\n Cholestrol ->  High ->  "<<cholestrol<<" mg/dl";
 else if(cholestrol>=190 && cholestrol<=240)
-cout<<"\n\n Cholesrtrol ->  Highly Dangerous ->  "<<cholestrol<<" mg/dl";
+cout<<"\n\n Cholestrol ->  Highly Dangerous ->  "<<cholestrol<<" mg/dl";
 
 cout<<"\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n";
 cout<<"\n\n 8.Fasting Plasma Glucose Test(FPG) : ";
@@ -1385,7 +1385,7 @@ else
 {
 cout<<" Low Sugar Level\n\n";	
 }
-cout<<"\n\n During Taking test we have found that you hadn't ate something from last 2 - 3 hrs so here's a tip \n\n";	
+cout<<"\n\n while Taking test we have found that you hadn't ate something from last 2 - 3 hrs so here's a tip \n\n";	
 cout<<" Health Tip 1 :";
 cout<<" You should eat something in every 2 hours it is important for body\n\n";
 sleep(1);	
@@ -1547,9 +1547,9 @@ void diabetes::prereport()
 {
 	int tempid,c=0;
 	system("cls");
-	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n";
+	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe assess we understand!\n";
 	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";	
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
+	cout<<"\t\t\t\t\t\t\t\t   ....OOPS SY 3....\n\n";
     cout<<"____________________________________________________________________________________________________________________________________________________________________________________\n\n\n";
 	fin.open("DIABETESDATA.txt",ios::in);
 	fturndoc.open("Doctors1.txt",ios::in);
@@ -1612,9 +1612,9 @@ void diabetes::aboutme()
 		cout<<"\t\tNAME:AMIT SINGH SANSOYA\n";
 		cout<<"\t\tSECTION:1656\n";
 		cout<<"\t\tAND THIS IS AWESOME\n";
-		cout<<" \t\tSizeof class aminstration : "<<sizeof(adminstration);
+		cout<<" \t\tSizeof class adminstration : "<<sizeof(adminstration);
 		cout<<"\n\n\t\tSizeof class diabetes : "<<sizeof(diabetes);
-		cout<<"\n\n\t\tSizeof class fianlreport : "<<sizeof(finalreport);
+		cout<<"\n\n\t\tSizeof class finalreport : "<<sizeof(finalreport);
 		cout<<"\n\n\t\tSizeof class login : "<<sizeof(Login);
 		cout<<"\n\n\t\tSizeof class problems : "<<sizeof(problems);
 		cout<<"\n\n\t\tSizeof class doctors : "<<sizeof(doctor);
@@ -1630,11 +1630,11 @@ void diabetes::deldata()
 	   	fout.open("Temp.txt",ios::out);
 	   	fturndoc.open("Doctor1.txt",ios::in);
 	   	ftemp.open("Tempdoc.txt",ios::out);
-	   cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n";
+	   cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe assess we understand!\n";
 	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";	
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
+	cout<<"\t\t\t\t\t\t\t\t   ....OOPS SY 3....\n\n";
     cout<<"____________________________________________________________________________________________________________________________________________________________________________________\n\n\n";	
-	   	cout<<"\t\t\t\tHere's the Data of all paitents\n\n\n";
+	   	cout<<"\t\t\t\tHere's the Data of all patients\n\n\n";
 	
 	
 	cout<<"|\t ID\t   |             NAME                 |  AGE    |   SEX   |   HEIGHT    |   WEIGHT      |\n";
@@ -1690,9 +1690,9 @@ void diabetes::patientlogin()
 	int tempid,tempotp,co;
 	long long int tempno;
 		system("cls");
-	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n";
+	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe assess we understand!\n";
 	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";	
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
+	cout<<"\t\t\t\t\t\t\t\t   ....OOPS SY 3....\n\n";
     cout<<"____________________________________________________________________________________________________________________________________________________________________________________\n\n\n";
 	cout<<"\n\n Enter Your user ID : ";
 	cin>>tempid;
@@ -1720,9 +1720,9 @@ void diabetes::patientlogin()
     if(tempid==mainobj.id && tempno==mainobj.phn) 
     {
     system("cls");
-	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n";
+	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe assess we understand!\n";
 	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";	
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
+	cout<<"\t\t\t\t\t\t\t\t   ....OOPS SY 3....\n\n";
     cout<<"____________________________________________________________________________________________________________________________________________________________________________________\n\n\n";
     cout<<"\n\n NAME: "<<mainobj.name;
 	cout<<"\n\n Age: "<<mainobj.age;
@@ -1786,15 +1786,15 @@ void diabetes::patientlogin()
 void diabetes::admin()
 {
 	system("cls");
-    cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n";
+    cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe assess we understand!\n";
 	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";	
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
+	cout<<"\t\t\t\t\t\t\t\t   ....OOPS SY 3....\n\n";
     cout<<"____________________________________________________________________________________________________________________________________________________________________________________\n\n\n";
 	cout<<"\n\n";
 	int ch;
 	char check;
 	BD:	
-	cout<<"\t\t\t\t\t\t\t\t  WE ARE ALWAYS HERE TO HELP YOU \n\n\t\t\t\t\t\t\t\t   CHOOSE THE OPTIONS FROM MENU\n\n 1: List All data(Paitents)\n\n 2: Search for Paitent\n\n 3: Delete Record(Paitents) \n\n 4: Update Records(Paitents)\n\n 5: Count Paitents\n\n 6: Admin Records\n\n 7: Admin Signup\n\n 8: Admin Duties\n\n 9: Logout";
+	cout<<"\t\t\t\t\t\t\t\t  WE ARE ALWAYS HERE TO HELP YOU \n\n\t\t\t\t\t\t\t\t   CHOOSE THE OPTIONS FROM MENU\n\n 1: List All data(Patients)\n\n 2: Search for Patient\n\n 3: Delete Record(Patients) \n\n 4: Update Records(Patients)\n\n 5: Count Patients\n\n 6: Admin Records\n\n 7: Admin Signup\n\n 8: Admin Duties\n\n 9: Logout";
     cout<<"\n\n YOUR CHOICE FROM LIST : ";
 	cin>>ch;	
 	switch(ch)
@@ -1938,7 +1938,7 @@ void adminstration::adminsi()
 	system("cls");
 	fadmin.open("admin.txt",ios::app);
     cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";	
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
+	cout<<"\t\t\t\t\t\t\t\t   ....OOPS SY 3....\n\n";
     cout<<"____________________________________________________________________________________________________________________________________________________________________________________\n\n\n";
 	cout<<"\n\n\t\t\t\t\t\t\t\t  WE ARE ALWAYS HERE TO HELP YOU \n\n\n";
 	cout<<" Enter Name : ";	
@@ -1969,7 +1969,7 @@ void adminstration::adminsi()
 	int c=0;
 	system("cls");
 	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";	
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
+	cout<<"\t\t\t\t\t\t\t\t   ....OOPS SY 3....\n\n";
     cout<<"____________________________________________________________________________________________________________________________________________________________________________________\n\n\n";
 	cout<<"\n\n\t\t\t\t\t\t\t\t  WE ARE ALWAYS HERE TO HELP YOU \n\n\n";
 	fadmin.open("admin.txt",ios::in);
@@ -2013,7 +2013,7 @@ void diabetes::setlock()
         char a[20],p[13];	
         system("cls");
 	    cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";	
-	    cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
+	    cout<<"\t\t\t\t\t\t\t\t   ....OOPS SY 3....\n\n";
         cout<<"____________________________________________________________________________________________________________________________________________________________________________________\n\n\n";
 	    cout<<"\n\n\t\t\t\t\t\t\t\t  WE ARE ALWAYS HERE TO HELP YOU \n\n\n";
 	    fadmin.open("admin.txt",ios::in);
@@ -2070,7 +2070,7 @@ void diabetes::setlock()
        fadmin.close();	
        if(strcmp(a,admino.userid)==0 && strcmp(p,admino.password)==0)
 	   {
-	   cout<<"\n\n Login Successfull \n\n";
+	   cout<<"\n\n Login Successful \n\n";
 	   sleep(1);
 	   cout<<" Redirecting \n\n";	
 	   sleep(2);
@@ -2092,11 +2092,11 @@ void adminstration::duty()
 	system("cls");
 	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n";
 	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";	
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
+	cout<<"\t\t\t\t\t\t\t\t   ....OOPS SY 3....\n\n";
     cout<<"____________________________________________________________________________________________________________________________________________________________________________________\n\n\n";
     cout<<"\n\n\n";
 	cout<<" 1 > Give Replies\n\n";
-	cout<<" 2 > Take Complains\n\n";
+	cout<<" 2 > Take Complaints\n\n";
 	cout<<" 3 > Add Medicines\n\n";
 	cout<<" 4 > Logout\n\n";
 	cout<<" Choose option : \n ";
@@ -2124,9 +2124,9 @@ void adminstration::duty()
 void diabetes::reply()
 {
 	system("cls");
-	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n";
+	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe assess we understand!\n";
 	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";	
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
+	cout<<"\t\t\t\t\t\t\t\t   ....OOPS SY 3....\n\n";
     cout<<"____________________________________________________________________________________________________________________________________________________________________________________\n\n\n";
     cout<<"\n\n\n";
     fin.open("query.txt",ios::in);
@@ -2170,9 +2170,9 @@ void diabetes::queries()
 {
 	system("cls");
 	fout.open("query.txt",ios::app);
-	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n";
+	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe assess we understand!\n";
 	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";	
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
+	cout<<"\t\t\t\t\t\t\t\t   ....OOPS SY 3....\n\n";
     cout<<"______________________________________________________________________________________________________________________________________________________________________\n\n\n";
     cout<<"\n\n\n";
     cout<<"\n\n Enter The Name --> ";
@@ -2254,9 +2254,9 @@ void diabetes::showqu()
 void adminstration::medi()
 {
 	system("cls");
-	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n";
+	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe assess we understand!\n";
 	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";	
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
+	cout<<"\t\t\t\t\t\t\t\t   ....OOPS SY 3....\n\n";
     cout<<"_______________________________________________________________________________________________________________________________________________________________________________\n\n\n";
 	int n,i;
 	fin.open("Medicines.txt",ios::app);
@@ -2279,9 +2279,9 @@ void adminstration::medi()
 void patient::medicare()
 {
 	system("cls");
-	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n";
+	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe ASSESS we understand!\n";
 	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";	
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
+	cout<<"\t\t\t\t\t\t\t\t   ...OOPS SY 3....\n\n";
     cout<<"_______________________________________________________________________________________________________________________________________________________________________________\n\n\n";
     fout.open("Medicines.txt",ios::in);
 	cout<<" Here's the medicines list \n\n ";
@@ -2301,7 +2301,7 @@ void patient ::buy()
 	char ch;
 	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n";
 	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";	
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
+	cout<<"\t\t\t\t\t\t\t\t   ....SY OOPS 3....\n\n";
     cout<<"_______________________________________________________________________________________________________________________________________________________________________________\n\n\n";
     fcross.open("DIABETESDATA.txt",ios::in);
 	fout.open("Medicines.txt",ios::in);
@@ -2377,7 +2377,7 @@ void patient ::buy()
     fsum.open("Bill.txt",ios::app);
     cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n";
 	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";	
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
+	cout<<"\t\t\t\t\t\t\t\t   ....SY OOPS 3....\n\n";
     cout<<"_________________________________________________________________________________________________________________________________________________________________________\n\n\n";
     cout<<"\n\n ";
     cout<<"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bill id : "<<billid;
@@ -2408,7 +2408,7 @@ void diabetes::update()
 	system("cls");	
 	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n";
 	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";	
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
+	cout<<"\t\t\t\t\t\t\t\t   ....SY OOPS 3....\n\n";
     cout<<"_________________________________________________________________________________________________________________________________________________________________________\n\n\n";
     cout<<"\n\n ";
     int tempid;
@@ -2469,7 +2469,7 @@ if(mainobj.id==tempid)
   	system("cls");	
 	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n";
 	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";	
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
+	cout<<"\t\t\t\t\t\t\t\t   ....SY OOPS 3....\n\n";
     cout<<"_________________________________________________________________________________________________________________________________________________________________________\n\n\n";
     cout<<"\n\n ";
   ftemp.open("send.txt",ios::app);
@@ -2488,7 +2488,7 @@ if(mainobj.id==tempid)
 	system("cls");	
 	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n";
 	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";	
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
+	cout<<"\t\t\t\t\t\t\t\t   ....SY OOPS 3...\n\n";
     cout<<"_________________________________________________________________________________________________________________________________________________________________________\n\n\n";
     cout<<"\n\n ";
     ftemp.open("comp.txt",ios::app);
@@ -2505,7 +2505,7 @@ if(mainobj.id==tempid)
  	system("cls");	
 	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n";
 	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";	
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
+	cout<<"\t\t\t\t\t\t\t\t   ....SY OOPS 3....\n\n";
     cout<<"_________________________________________________________________________________________________________________________________________________________________________\n\n\n";
     cout<<"\n\n ";
     fout.open("recomp.txt",ios::app);
@@ -2528,7 +2528,7 @@ if(mainobj.id==tempid)
     system("cls");	
 	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n";
 	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";	
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
+	cout<<"\t\t\t\t\t\t\t\t   ....SY OOPS 3...\n\n";
     cout<<"_________________________________________________________________________________________________________________________________________________________________________\n\n\n";
     cout<<"\n\n ";	
  	fin.open("recomp.txt",ios::in);
@@ -2544,7 +2544,7 @@ if(mainobj.id==tempid)
  	 system("cls");	
 	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n";
 	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";	
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
+	cout<<"\t\t\t\t\t\t\t\t   ....SY OOPS 3....\n\n";
     cout<<"_________________________________________________________________________________________________________________________________________________________________________\n\n\n";
     cout<<"\n\n ";
  	fadmin.open("admin.txt",ios::in);
@@ -2567,7 +2567,7 @@ if(mainobj.id==tempid)
  	system("cls");
  	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n";
 	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";	
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
+	cout<<"\t\t\t\t\t\t\t\t   ....SY OOPS 3....\n\n";
     cout<<"_________________________________________________________________________________________________________________________________________________________________________\n\n\n";
     cout<<"\n\n ";
     fin.open("DIABETESDATA.txt",ios::in);
@@ -2629,7 +2629,7 @@ void patient::docchange()
 	system("cls");
  	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n";
 	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";	
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
+	cout<<"\t\t\t\t\t\t\t\t   ....SY OOPS 3....\n\n";
     cout<<"_________________________________________________________________________________________________________________________________________________________________________\n\n\n";
     cout<<"\n\n ";
 	cout<<" Sorry for the inconvenience caused Currently this interface is disabeled by admin\n\n";
@@ -2649,7 +2649,7 @@ void quick::buy()
 	system("cls");
  	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n";
 	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";	
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
+	cout<<"\t\t\t\t\t\t\t\t   ....SY OOPS 3....\n\n";
     cout<<"_________________________________________________________________________________________________________________________________________________________________________\n\n\n";
     cout<<"\n\n ";
 	cout<<"\t\t\t\t\t\t\t\t Medicines\n\n";
@@ -2721,7 +2721,7 @@ void quick::buy()
 	system("cls");
  	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n";
 	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";	
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
+	cout<<"\t\t\t\t\t\t\t\t   ....SY OOPS 3....\n\n";
     cout<<"_________________________________________________________________________________________________________________________________________________________________________\n\n\n";
 cout<<setw(5)<<"ID"<<setw(5)<<"|"<<setw(20)<<"Name"<<setw(20)<<"|"<<setw(5)<<"Price/package"<<setw(5)<<"|\n\n";	
 	

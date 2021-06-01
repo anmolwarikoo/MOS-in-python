@@ -1207,7 +1207,7 @@ void diabetes::doctorlist()
     fout.close();
     fturndoc.close();
     fin.close();
-    remove("Temp.txt");
+    //remove("Temp.txt");
 }
 
 void diabetes::prereport()
@@ -1321,6 +1321,7 @@ void diabetes::deldata()
 	     cout<<"|"<<setw(9)<<id<<setw(10)<<"|"<<setw(15)<<name<<setw(20)<<"|"<<setw(5)<<age<<setw(5)<<"|"<<setw(5)<<sex<<setw(5)<<"|"<<setw(7)<<height<<setw(7)<<"|"<<setw(7)<<weight<<setw(7)<<"\t|\n\n";
         }
     fin.close();
+	remove("tempdoc.txt");
 }
 
 void diabetes::admin()
@@ -1521,7 +1522,7 @@ void adminstration::count()
     }
 
 
-void diabetes::setlock()                //solve issues
+void diabetes::setlock()                //error password
 {
         int i,c=0;
         char a[20],p[13];
@@ -1547,9 +1548,7 @@ void diabetes::setlock()                //solve issues
 	   fadmin.open("admin.txt",ios::in|ios::out);
 	    if(c==0)
 	    {
-	   	cout<<"\n\n No id existed So please Signup to do so\n\n";
-	   	Sleep(3);
-	    admino.adminsi();
+	    	admino.adminsi();
 	    }
 	    else
 	    {
@@ -1581,11 +1580,7 @@ void diabetes::setlock()                //solve issues
        fadmin.close();
        if(strcmp(a,admino.userid)==0 && strcmp(p,admino.password)==0)
 	   {
-	   cout<<"\n\n Login Successfull \n\n";
-	   Sleep(1);
-	   cout<<" Redirecting \n\n";
-	   Sleep(2);
-	   mainobj.admin();
+	   	mainobj.admin();
 	   }
        else
 	   {
@@ -1593,6 +1588,8 @@ void diabetes::setlock()                //solve issues
 	   counter1=0;
 	   }
        }
+
+remove("admintmp.txt");
 }
 
 
@@ -1642,7 +1639,7 @@ if(mainobj.id==tempid)
 	Sleep(1);
 }
 
- void diabetes::adminre()
+ void diabetes::adminre()						//record admin
  {
  	 system("cls");
 	cout<<"\t\t\t\t\t Welcome to diabetes management system\n\n\n";
@@ -1657,11 +1654,11 @@ if(mainobj.id==tempid)
 	 cout<<"\n\n ";
 	 cout<<"ID no. : "<<admino.stid;
 	 cout<<"\n\n";
-	 fadmin.close();
 	}
+	fadmin.close();
  }
 
-void quick::buy()               // not more than 2 medicines , issue, used getch to stop()
+void quick::buy()               // not more than 2 medicines , issue, used getch to stop
 {
 	int sum=0;
 	int billid;

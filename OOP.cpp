@@ -15,7 +15,6 @@ fstream fin,fout,fturndoc,ftemp,fadmin,fcross,fsum;
 class problems;
 class Login;
 
-
 class diabetes
 {
         int id;
@@ -54,7 +53,6 @@ class diabetes
 		void treatrecord();
 }mainobj;
 
-
 class Login
 {
 	public:
@@ -63,7 +61,6 @@ class Login
 		friend class diabetes;
 		void password();
 }passo;
-
 
 class doctor
 {
@@ -76,7 +73,6 @@ class doctor
 			int d,m,y;
 		}st;
 }docp;
-
 
 class problems
 {
@@ -168,7 +164,6 @@ class discuss
 	char input[200000];
 }q;
 class finalreport
-
 {
 	public:
 	friend class diabetes;
@@ -1344,12 +1339,9 @@ void diabetes::deldata()
 	   	fout.open("Temp.txt",ios::out);
 	   	fturndoc.open("Doctor1.txt",ios::in);
 	   	ftemp.open("Tempdoc.txt",ios::out);
-	   cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n";
-	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
-    cout<<"____________________________________________________________________________________________________________________________________________________________________________________\n\n\n";
-	   	cout<<"\t\t\t\tHere's the Data of all paitents\n\n\n";
-
+	       cout<<"\t\t\t\t\t Welcome to diabetes management system\n\n\n";
+    cout<<"\t\t\t\t\t     OOPS course project SY3\n\n";
+    cout<<"\t\t\t\tHere's the Data of all paitents\n\n\n";
 
 	cout<<"|\t ID\t   |             NAME                 |  AGE    |   SEX   |   HEIGHT    |   WEIGHT      |\n";
 	while(fin.read((char*)&mainobj,sizeof(mainobj)))
@@ -1671,11 +1663,9 @@ void diabetes::setlock()                //solve issues
 void patient::medicare()
 {
 	system("cls");
-	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n";
-	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
-    cout<<"_______________________________________________________________________________________________________________________________________________________________________________\n\n\n";
-    fout.open("Medicines.txt",ios::in);
+    cout<<"\t\t\t\t\t Welcome to diabetes management system\n\n\n";
+    cout<<"\t\t\t\t\t     OOPS course project SY3\n\n";
+	fout.open("Medicines.txt",ios::in);
 	cout<<" Here's the medicines list \n\n ";
 	cout<<setw(10)<<"Medicine ID"<<setw(10)<<"|"<<setw(15)<<"MEDICINE NAMES"<<setw(15)<<"|"<<setw(10)<<"PRICE"<<"|";
 	cout<<"\n\n________________________________________________________________________________________________________________________________________________________________________________\n\n";
@@ -1890,11 +1880,9 @@ void patient::updatemine()
  void patient :: diseaselevel()
  {
  	system("cls");
- 	cout<<"\t\t\t\t\t\t\t\t WELCOME TO THE DIABETES HEALTH CARE\t\t\n\t\t\t\t\t\t\t\t\tWe judge we understand!\n";
-	cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n\n";
-	cout<<"\t\t\t\t\t\t\t\t   ....Tusharamit Enterprise....\n\n";
-    cout<<"_________________________________________________________________________________________________________________________________________________________________________\n\n\n";
-    cout<<"\n\n ";
+    cout<<"\t\t\t\t\t Welcome to diabetes management system\n\n\n";
+    cout<<"\t\t\t\t\t     OOPS course project SY3\n\n";
+ 	cout<<"\n\n ";
     fin.open("DIABETESDATA.txt",ios::in);
     fout.open("problems.txt",ios::in);
     cout<<"Enter Your Id : ";

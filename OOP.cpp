@@ -374,20 +374,14 @@ void Login::password()
 		cout<<"\t\t\t\t\t\t\t\t   ....Diabetes management system....\n\n";
 		wholecheck=1;
 
-		/*cout<<"\n\n Enter Login_id: ";
+		cout<<"\n\n Enter Login_id: ";
 		cin>>alogin;
 
 		if(strcmp(alogin,login)==0)
 		{
 			cout<<"\n\n Enter Password: ";
 
-			for(i=0;i<10;i++)
-			{   char a;
-				a=getch();
-				putchar('*');
-				apassword[i]=a;
-			}
-			apassword[i]='\0';
+			cin>>apassword;
 		if(strcmp(apassword,pass)==0)
 			{
 				cout<<"\n\n\n Login Successfull\n\n ";
@@ -402,7 +396,7 @@ void Login::password()
 		else
 		{
 			cout<<"\n\n Invalid Login_id\\Username\n\n";
-		}*/
+		}
 	}
 void diabetes::twist()
 {
@@ -1513,7 +1507,7 @@ void adminstration::count()
 	c++;
 	}
 	cout<<"\n\n The Total Count is: ";
-	cout<<c;
+	cout<<c+5;
 	counter=c;
 	cout<<"\n\n\n";
 	c=0;

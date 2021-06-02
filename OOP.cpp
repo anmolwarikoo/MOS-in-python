@@ -115,6 +115,7 @@ class quick
 char name[300];
 int gid;
 int age;
+char blood[3];
 float sugar;
 float weight;
 float bodytemp;
@@ -159,6 +160,8 @@ float bodytemp;
 	cin>>sugar;
 	cout<<"\n\n Enter the body temperature : ";
 	cin>>bodytemp;
+	cout<<"\n\n Enter Blood group : ";
+	cin>>blood;
     system("cls");
  	cout<<"\t\t\t\t\t Welcome to diabetes management system\n\n\n";
     cout<<"\t\t\t\t\t     OOPS course project SY3\n\n";
@@ -167,47 +170,9 @@ float bodytemp;
 	cout<<"\n\n Age : "<<age;
 	cout<<"\n\n Weight : "<<weight;
 	cout<<"\n\n Body Temp : "<<bodytemp;
+	cout<<"\n\n Blood group : "<<blood;
     cout<<"\n\n";
-	int blood;
-srand(time(NULL));
-blood=rand()%1+pcnt
-;
-if(blood==1)
-{
-	cout<<" Blood Group : "<<" A+ ";
-}
-else if(blood==2)
-{
-	cout<<" Blood Group : "<<" A-";
-}
-else if(blood==3)
-{
-	cout<<" Blood Group : "<<" B+";
-}
-else if(blood==4)
-{
-	cout<<" Blood Group : "<<" B-";
-}
-else if(blood==5)
-{
-	cout<<" Blood Group : "<<" O+";
-}
-else if(blood==6)
-{
-	cout<<" Blood Group : "<<" O-";
-}
-else if(blood==7)
-{
-	cout<<" Blood Group : "<<" AB+";
-}
-else if(blood==8)
-{
-	cout<<" Blood Group : "<<" AB-";
-}
-else
-{
-    cout<<" Blood Group : "<<" O+";
-}
+	
 float bloodcount;
 srand(time(NULL));
 bloodcount=rand()%4000+10000;
@@ -256,7 +221,7 @@ cout<<"\n\n This is on the basis of a simple test only please take appointment f
 cout<<"\n\n Generating Medicine Suggestions ";
 	Sleep(5);
 if(sugar>7.5 && sugar<8.5)
-{
+{	system("pause");
     system("cls");
  	cout<<"\t\t\t\t\t Welcome to diabetes management system\n\n\n";
     cout<<"\t\t\t\t\t     OOPS course project SY3\n\n";
@@ -288,7 +253,7 @@ if(sugar>7.5 && sugar<8.5)
 	mainobj.twist();
 }
 else if(sugar>=8.5)
-{
+{	system("pause");
 	system("cls");
  	cout<<"\t\t\t\t\t Welcome to diabetes management system\n\n\n";
     cout<<"\t\t\t\t\t     OOPS course project SY3\n\n";
@@ -899,7 +864,7 @@ cout<<"\n\n\t\t\t\t\t\t\t\t Blood Report";
 cout<<"\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n";
 int blood;
 srand(time(NULL));
-blood=rand()%1+8;
+blood=(rand()%8)+1;
 if(blood==1)
 {
 	cout<<" Blood Group : "<<" A+ ";

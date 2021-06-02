@@ -340,13 +340,20 @@ void Login::password()
 		wholecheck=1;
 
 		cout<<"\n\n Enter Login_id: ";
+		char a;
 		cin>>alogin;
 
 		if(strcmp(alogin,login)==0)
 		{
 			cout<<"\n\n Enter Password: ";
 
-			cin>>apassword;
+			for(i=0;i<sizeof(pass)-1;i++)
+		{
+			a=getch();
+			putchar('*');
+			apassword[i]=a;
+		}
+		apassword[i]='\0';
 		if(strcmp(apassword,pass)==0)
 			{
 				cout<<"\n\n\n Login Successfull\n\n ";
@@ -1514,21 +1521,15 @@ void diabetes::setlock()                //error password
 	    cout<<"\n\n Enter the userid : ";
         cin>>a;
         cout<<"\n\n Enter The Password : ";
-        cin>>p;
-        /*for(i=0;i<12;i++)
-	    	{
-			p[i]=getch();
-			if(p[i]==13)
-			break;
-			else if(p[i]==8)
-			{
-			cout<<"\b \b";
-			i=i-2;
-			}
-			else
+        char pass[5];
+		char b;
+        for(i=0;i<sizeof(pass);i++)
+		{
+			b=getch();
 			putchar('*');
-		    }
-		p[i]='\0';*/
+			p[i]=b;
+		}
+		p[i]='\0';
         while(fadmin.read((char*)&admino,sizeof(&admino)) && !fadmin.eof())
        {
     	if(strcmp(a,admino.userid)==0 && strcmp(p,admino.password)==0)
